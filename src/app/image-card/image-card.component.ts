@@ -17,11 +17,11 @@ export class ImageCardComponent {
 
   constructor() {}
 
-  hideLoader() {
-    this.isVisible = false;
-  }
-
   showLoader() {
     this.isVisible = true;
+  }
+
+  hideLoader() {
+    this.isVisible = false;
   }
 }

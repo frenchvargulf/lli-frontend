@@ -34,9 +34,9 @@ export class LazyLoadDirective implements AfterViewInit {
           if (entry.isIntersecting) {
             this.loadImage(this.el.nativeElement);
             obs.unobserve(this.el.nativeElement);
-            this.showLoader();
-          } else {
             this.hideLoader();
+          } else {
+            this.showLoader();
           }
         });
       },
