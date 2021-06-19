@@ -13,7 +13,7 @@ import {AppImageData} from "../models/AppImageData";
 })
 export class ImageCardComponent {
   @Input() image: AppImageData;
-  isVisible = false;
+  isVisible = true;
 
   constructor() {}
 
