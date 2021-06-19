@@ -1,0 +1,9 @@
+<div class="box">
+  <div class="img-box relative">
+    <img appLazyLoad [src]="image.url" [offset]="'0px 0px -200px 0px'" [hideLoader]="hideLoader.bind(this)"
+      [showLoader]="showLoader.bind(this)" />
+    <!-- <div appLazyLoad [src]="image.url" [offset]="'0px 0px -200px 0px'" [hideLoader]="hideLoader.bind(this)"
+      [showLoader]="showLoader.bind(this)" class="inner-box"></div> -->
+    <app-loader [isVisible]="isVisible"></app-loader>
+  </div>
+</div>
