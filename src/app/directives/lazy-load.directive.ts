@@ -35,9 +35,7 @@ export class LazyLoadDirective implements AfterViewInit {
             this.loadImage(this.el.nativeElement);
             obs.unobserve(this.el.nativeElement);
             this.hideLoader();
-          } else {
-            this.showLoader();
-          }
+            }
         });
       },
       { rootMargin: this.offset }
